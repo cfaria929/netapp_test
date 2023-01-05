@@ -4,7 +4,7 @@
   gather_facts: false
   connection: local
   tasks:
-    - name: Call Version
-      include_role:
-        name: ontap
-        task_from: ontap_version
+   - name: Call Version
+     include_role:
+       name: ontap
+       task_from: ontap_version
