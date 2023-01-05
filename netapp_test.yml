@@ -4,12 +4,12 @@
   gather_facts: false
   connection: local
   tasks:
-   - name: Get NetApp info as Cluster Admin (Password Authentication)
-     netapp.ontap.na_ontap_info:
-       hostname: "na-vsim"
-       username: "admin"
-       password: "admins_password"
-       validate_certs: false
-     register: ontap_info
-   - debug:
-       msg: "{{ ontap_info.ontap_info }}"
+    - name: Get NetApp info as Cluster Admin (Password Authentication)
+      netapp.ontap.na_ontap_info:
+        hostname: "na-vsim"
+        username: "admin"
+        password: "admins_password"
+        validate_certs: false
+      register: ontap_info
+    - debug:
+        msg: "{{ ontap_info.ontap_info }}"
