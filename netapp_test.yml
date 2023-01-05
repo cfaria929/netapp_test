@@ -10,6 +10,7 @@
         username: "admin"
         password: "admins_password"
         validate_certs: false
+        use_rest: auto
       register: ontap_info
     - debug:
         msg: "{{ ontap_info.ontap_info }}"
